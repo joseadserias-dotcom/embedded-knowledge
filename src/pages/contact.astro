@@ -1,0 +1,163 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Contact — Embedded-Knowledge, Inc"
+  description="Get in touch with Embedded-Knowledge, Inc. for advising, training, speaking, or media inquiries."
+>
+  <div class="page">
+    <div class="container">
+      <h1>Contact</h1>
+      <p>We look forward to hearing from you.</p>
+
+      <div class="contact-grid">
+        <form method="POST" aria-label="Contact form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              aria-required="true"
+              autocomplete="name"
+            />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              aria-required="true"
+              autocomplete="email"
+            />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              aria-required="true"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+
+        <aside aria-label="Contact details">
+          <h2>Get in Touch</h2>
+          <p>
+            <a href="mailto:jeduardo.campos@embedded-knowledge.com">
+              jeduardo.campos@embedded-knowledge.com
+            </a>
+          </p>
+          <p>
+            <a href="tel:+14256474345">(425) 647-4345</a>
+          </p>
+        </aside>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page {
+    padding: 4rem 0;
+  }
+
+  h1 {
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
+    font-weight: 700;
+    color: var(--color-navy);
+    margin-bottom: 0.5rem;
+  }
+
+  .page > .container > p {
+    margin-bottom: 2.5rem;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  @media (max-width: 640px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+  }
+
+  form {
+    max-width: 600px;
+  }
+
+  .field {
+    margin-bottom: 1.25rem;
+  }
+
+  label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.35rem;
+    color: var(--color-text);
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.65rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--font-main);
+    font-size: 1rem;
+    color: var(--color-text);
+    background: var(--color-bg);
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 1px;
+    border-color: var(--color-accent);
+  }
+
+  textarea {
+    height: 160px;
+    resize: vertical;
+  }
+
+  button.btn-primary {
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-main);
+    font-size: 1rem;
+  }
+
+  aside h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-navy);
+    margin-bottom: 1rem;
+  }
+
+  aside p {
+    margin-bottom: 0.5rem;
+  }
+
+  aside a {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+
+  aside a:hover {
+    text-decoration: underline;
+  }
+</style>

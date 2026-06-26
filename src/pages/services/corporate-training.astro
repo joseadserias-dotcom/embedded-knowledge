@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Corporate Training — Embedded-Knowledge, Inc"
+  description="E-K offers corporate training for teams undergoing solution implementation, educating stakeholders on the elements and desired results of a solution."
+>
+  <div class="page">
+    <div class="container">
+      <h1>Corporate Training</h1>
+      <p>
+        E-K offers corporate training for teams undergoing solution implementation, educating
+        stakeholders on the elements and desired results of a solution.
+      </p>
+      <a href="/contact" class="btn-primary">Contact E-K</a>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page {
+    padding: 4rem 0;
+  }
+
+  .container {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  h1 {
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
+    font-weight: 700;
+    color: var(--color-navy);
+  }
+
+  p {
+    font-size: 1.05rem;
+  }
+</style>

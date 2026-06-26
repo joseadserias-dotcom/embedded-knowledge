@@ -1,0 +1,102 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Services — Embedded-Knowledge, Inc"
+  description="E-K offers advising, corporate training, and speaking services for complex organizational problems."
+>
+  <div class="page">
+    <div class="container">
+      <h1>Our Services</h1>
+      <p class="intro">
+        E-K guides organizations through all aspects of complex problem solving, from ideation
+        and design all the way to implementation and training.
+      </p>
+      <div class="cards" role="list">
+        <article role="listitem">
+          <h2>Advising</h2>
+          <p>
+            E-K leads your team through the entire solution-design process: dissecting the
+            problem, crafting the best solution, and guiding stakeholders through implementation.
+          </p>
+          <a href="/services/advising">Learn more</a>
+        </article>
+        <article role="listitem">
+          <h2>Corporate Training</h2>
+          <p>
+            E-K offers corporate training for teams undergoing solution implementation, educating
+            stakeholders on the elements and desired results of a solution.
+          </p>
+          <a href="/services/corporate-training">Learn more</a>
+        </article>
+        <article role="listitem">
+          <h2>Speaking</h2>
+          <p>
+            Eduardo and Erica share their solution-design experiences with audiences around the
+            world, leading workshops and speaking at conferences and MBA courses.
+          </p>
+          <a href="/services/speaking">Learn more</a>
+        </article>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page {
+    padding: 4rem 0;
+  }
+
+  h1 {
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
+    font-weight: 700;
+    color: var(--color-navy);
+    margin-bottom: 1rem;
+  }
+
+  .intro {
+    max-width: 700px;
+    margin-bottom: 2.5rem;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  article {
+    background: var(--color-bg-light);
+    border: 1px solid #dde2ec;
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  article h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-navy);
+  }
+
+  article p {
+    color: var(--color-muted);
+    font-size: 0.95rem;
+    flex: 1;
+  }
+
+  article a {
+    color: var(--color-accent);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    align-self: flex-start;
+  }
+
+  article a:hover {
+    text-decoration: underline;
+  }
+</style>

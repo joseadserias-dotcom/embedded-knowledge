@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="The Book — From Problem Solving to Solution Design"
+  description="Order 'From Problem Solving to Solution Design: Turning Ideas into Actions' by J. Eduardo Campos and Erica W. Campos."
+>
+  <div class="page">
+    <div class="container">
+      <div class="book-content">
+        <h1>From Problem Solving to Solution Design</h1>
+        <p class="subtitle">Turning Ideas into Actions</p>
+        <p>
+          This book is a field guide to finding the best path when designing sustainable solutions
+          for complex problems within organizations. It provides five critical checkpoints to aid
+          those designing and implementing solutions, as well as many innovative techniques and
+          resources.
+        </p>
+        <p>
+          J. Eduardo Campos and Erica W. Campos share over fifty years of combined formal
+          training, research, and solution-designing experience addressing both everyday situations
+          and complex organizational problems.
+        </p>
+        <a
+          href="https://amzn.to/4akqZ3n"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-primary"
+          aria-label="Order the book on Amazon"
+        >Order on Amazon</a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page {
+    padding: 4rem 0;
+  }
+
+  .book-content {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  h1 {
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
+    font-weight: 700;
+    color: var(--color-navy);
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    color: var(--color-accent);
+    font-weight: 600;
+  }
+
+  p {
+    color: var(--color-text);
+  }
+</style>

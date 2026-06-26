@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Speaking — Embedded-Knowledge, Inc"
+  description="Eduardo and Erica Campos speak at conferences, MBA courses, and workshops on solution design and organizational thinking."
+>
+  <div class="page">
+    <div class="container">
+      <h1>Speaking</h1>
+      <p>
+        Eduardo and Erica share their solution-design experiences with audiences around the
+        world, leading workshops and speaking at conferences and MBA courses.
+      </p>
+
+      <section aria-labelledby="topics-heading">
+        <h2 id="topics-heading">Topics</h2>
+        <ul>
+          <li>Design Thinking and Business Model Generation</li>
+          <li>Precise influencing</li>
+          <li>Driving conversations between management and the C-suite</li>
+          <li>Effective supplier engagement</li>
+          <li>Systemic risk and organizational growth</li>
+          <li>Startup ecosystem solutions</li>
+        </ul>
+      </section>
+
+      <a href="/contact" class="btn-primary">Book a Speaking Engagement</a>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page {
+    padding: 4rem 0;
+  }
+
+  .container {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  h1 {
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
+    font-weight: 700;
+    color: var(--color-navy);
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    font-size: 1.05rem;
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--color-text);
+  }
+</style>

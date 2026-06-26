@@ -1,0 +1,153 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Embedded-Knowledge, Inc — Solution Design">
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="container">
+      <h1 id="hero-heading">Turning Ideas Into Actions</h1>
+      <p>Designing sustainable solutions for complex problems</p>
+      <div class="hero-ctas">
+        <a href="/services" class="btn-primary">Work With Us</a>
+        <a href="/about" class="btn-primary">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="about-heading">
+    <div class="container">
+      <h2 id="about-heading">About E-K</h2>
+      <p>
+        E-K's mission is to aid organizations in the design and implementation of sustainable
+        solutions for complex problems. Utilizing time-tested methods and innovative techniques,
+        E-K helps organizations drive results by tapping into the vast knowledge already embedded
+        within their organization.
+      </p>
+    </div>
+  </section>
+
+  <section class="book-section" aria-labelledby="book-heading">
+    <div class="container">
+      <h2 id="book-heading">From Problem Solving to Solution Design</h2>
+      <p>
+        J. Eduardo Campos and Erica W. Campos share what they have learned from their extensive
+        fifty-plus years of formal training and solution-designing experience.
+      </p>
+      <a
+        href="https://www.amazon.com/Problem-Solving-Solution-Design-Turning/dp/0998365564/"
+        class="btn-primary"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Order the Book</a>
+    </div>
+  </section>
+
+  <section aria-labelledby="services-heading">
+    <div class="container">
+      <h2 id="services-heading">Our Services</h2>
+      <div class="cards" role="list">
+        <article role="listitem">
+          <h3>Advising</h3>
+          <p>Expert guidance to help your organization navigate complex challenges.</p>
+          <a href="/services/advising">Learn more</a>
+        </article>
+        <article role="listitem">
+          <h3>Corporate Training</h3>
+          <p>Structured programs that build solution-design capability within your teams.</p>
+          <a href="/services/corporate-training">Learn more</a>
+        </article>
+        <article role="listitem">
+          <h3>Speaking</h3>
+          <p>Engaging keynotes and workshops on solution design and organizational thinking.</p>
+          <a href="/services/speaking">Learn more</a>
+        </article>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    background: var(--color-navy);
+    color: white;
+    padding: 5rem 0;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    font-size: 1.125rem;
+    opacity: 0.85;
+    margin-bottom: 2rem;
+  }
+
+  .hero-ctas {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  section {
+    padding: 4rem 0;
+  }
+
+  section h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-navy);
+    margin-bottom: 1rem;
+  }
+
+  section p {
+    max-width: 700px;
+    margin-bottom: 1.5rem;
+  }
+
+  .book-section {
+    background: var(--color-bg-light);
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  article {
+    background: var(--color-bg-light);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #dde2ec;
+  }
+
+  article h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-navy);
+    margin-bottom: 0.5rem;
+  }
+
+  article p {
+    color: var(--color-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+
+  article a {
+    color: var(--color-accent);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+
+  article a:hover {
+    text-decoration: underline;
+  }
+</style>
