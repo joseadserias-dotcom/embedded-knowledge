@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://embedded-knowledge.com/sitemap-index.xml

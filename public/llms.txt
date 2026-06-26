@@ -1,0 +1,11 @@
+# Embedded-Knowledge, Inc
+
+> E-K helps organizations design and implement sustainable solutions for complex problems.
+
+## Pages
+- [Home](https://embedded-knowledge.com/): Mission and overview
+- [About](https://embedded-knowledge.com/about/): Eduardo and Erica Campos bios
+- [Book](https://embedded-knowledge.com/book/): From Problem Solving to Solution Design
+- [Services](https://embedded-knowledge.com/services/): Advising, Corporate Training, Speaking
+- [Assessment](https://embedded-knowledge.com/assessment/): Solution designing readiness assessment
+- [Contact](https://embedded-knowledge.com/contact/): Get in touch
